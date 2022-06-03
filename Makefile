@@ -1,14 +1,14 @@
 CC=gcc
 CFLAGS=
 LDFLAGS=-lncurses
-SRC=src/game.c src/item.h src/map.h src/map.c src/player.h
+SRC=src/game.c
 
 game: $(SRC)
 	$(CC) $(CFLAGS) $(SRC) -c
 	$(CC) $(LDFLAGS) *.o -o game
 
 clean:
-	rm -f *.o src/*.gch
+	rm -f *.o
 
 .PHONY: clean
 
