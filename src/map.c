@@ -13,7 +13,7 @@ map_t *init_empty_map()
 	map->px = 0;
 	map->py = 0;
 	map->data = malloc(map->w*map->h);
-	memset(map->data, 'o', map->w*map->h);
+	memset(map->data, ' ', map->w*map->h);
 
 	return map;
 }

@@ -38,10 +38,13 @@ int main(int argc, char **argv)
 
 	getch();
 
+	
 	/*
 	 *  map_t *empty = init_empty_map();
 	 *
  	 *  write_map(empty, "src/map/debug.map");
+	 *
+	 *  free(map);
 	 *
 	 *  thats how we make debug.map
 	 */
