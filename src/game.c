@@ -1,7 +1,10 @@
 #include <ncurses.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <errno.h>
+#include "map.h"
 
 #define NAME_SIZE 255
 char *name;
@@ -27,12 +30,21 @@ int main(int argc, char **argv)
 
 	/*
 	 *  clear();
+	 *
 	 *  mvprintw(4, (int)mx/2, hello, name);
 	 *
 	 *  unused
 	 */
 
 	getch();
+
+	/*
+	 *  map_t *empty = init_empty_map();
+	 *
+ 	 *  write_map(empty, "src/map/debug.map");
+	 *
+	 *  thats how we make debug.map
+	 */
 
 	endwin();
 
